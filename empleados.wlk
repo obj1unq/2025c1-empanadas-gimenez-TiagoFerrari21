@@ -33,7 +33,7 @@ object galvan {
         else if(deuda > cantidad){
             deuda = deuda - cantidad
         }
-        else (deuda < cantidad){
+        else {
             dinero = dinero + cantidad - deuda
             deuda = 0
         }
@@ -46,6 +46,7 @@ object galvan {
     method gastar(cantidad){
         if (cantidad > dinero){
             deuda = deuda + cantidad - dinero
+            dinero = 0
         }
         else {
             dinero = dinero - cantidad
