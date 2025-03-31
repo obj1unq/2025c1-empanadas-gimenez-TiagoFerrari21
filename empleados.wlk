@@ -61,7 +61,7 @@ object baigorria {
     valEmpanada = _valEmpanada
   }
   
-  method totalCobrado() = "El empleado ha cobrado $" + totalCobrado
+  method totalCobrado() = totalCobrado
   
   method cobrarSueldo(cantidad) {
     dinero += cantidad
